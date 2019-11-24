@@ -1,0 +1,92 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Dec 23 16:24:39 2018
+| Host         : DESKTOP-U59D5GG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ElevatorSystem_control_sets_placed.rpt
+| Design       : ElevatorSystem
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    25 |
+| Unused register locations in slices containing registers |    38 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |           11 |
+|     10 |            1 |
+|     12 |            1 |
+|    16+ |           12 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             156 |           39 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             190 |           36 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             248 |           54 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------+----------------------------------------+------------------+----------------+
+|  Clock Signal  |               Enable Signal               |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------------+----------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | image_red[0][7]_i_2_n_0                   | image_red[0][6]_i_1_n_0                |                1 |              8 |
+|  clk_IBUF_BUFG | image_red[0][7]_i_2_n_0                   | image_red[1][6]_i_1_n_0                |                1 |              8 |
+|  clk_IBUF_BUFG | image_red[0][7]_i_2_n_0                   | image_red[0][7]_i_1_n_0                |                1 |              8 |
+|  clk_IBUF_BUFG | image_red[0][7]_i_2_n_0                   | image_blue[1][6]_i_1_n_0               |                1 |              8 |
+|  clk_IBUF_BUFG | image_red[0][7]_i_2_n_0                   | image_red[1][7]_i_1_n_0                |                1 |              8 |
+|  clk_IBUF_BUFG | image_red[0][7]_i_2_n_0                   | image_blue[0][7]_i_1_n_0               |                2 |              8 |
+|  clk_IBUF_BUFG | image_red[2][6]_i_1_n_0                   | image_red[2][7]_i_1_n_0                |                1 |              8 |
+|  clk_IBUF_BUFG | keypad4X4_inst0/FSM_onehot_row[4]_i_1_n_0 |                                        |                1 |              8 |
+|  clk_IBUF_BUFG | numOfPassengersInFirstFloor[3]_i_2_n_0    | numOfPassengersInFirstFloor[3]_i_1_n_0 |                4 |              8 |
+|  clk_IBUF_BUFG | numOfPassengersInSecondFloor[3]_i_1_n_0   | numOfPassengersInFirstFloor[3]_i_1_n_0 |                4 |              8 |
+|  clk_IBUF_BUFG | numOfPassengersInThirdFloor[3]_i_1_n_0    | numOfPassengersInFirstFloor[3]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG | display_8x8_0/bit_sent_count[4]_i_1_n_0   |                                        |                1 |             10 |
+|  clk_IBUF_BUFG | keypad4X4_inst0/count_deb                 | keypad4X4_inst0/count_deb[5]_i_1_n_0   |                2 |             12 |
+|  clk_IBUF_BUFG | image_red[0][7]_i_2_n_0                   |                                        |                4 |             16 |
+|  clk_IBUF_BUFG | image_red[2][6]_i_1_n_0                   |                                        |                2 |             16 |
+|  clk_IBUF_BUFG | keypad4X4_inst0/clk_en2                   |                                        |                4 |             18 |
+|  clk_IBUF_BUFG | display_8x8_0/clk_en_slow                 | display_8x8_0/op_count[9]_i_1_n_0      |                6 |             20 |
+|  clk_IBUF_BUFG | image_red[2][3]_i_1_n_0                   |                                        |                4 |             24 |
+|  clk_IBUF_BUFG | image_red[2][5]_i_1_n_0                   |                                        |                3 |             24 |
+|  clk_IBUF_BUFG | moveTime[12]_i_1_n_0                      |                                        |               13 |             26 |
+|  clk_IBUF_BUFG | moveTime[12]_i_1_n_0                      | moveTime[26]_i_1_n_0                   |                4 |             28 |
+|  clk_IBUF_BUFG | display_8x8_0/color_data[0]_i_1_n_0       |                                        |                4 |             48 |
+|  clk_IBUF_BUFG | counter[26]_i_2_n_0                       | counter[26]_i_1_n_0                    |               10 |             54 |
+|  clk_IBUF_BUFG | elapsedTime[0]_i_2_n_0                    | elapsedTime[0]_i_1_n_0                 |               14 |             54 |
+|  clk_IBUF_BUFG |                                           |                                        |               39 |            156 |
++----------------+-------------------------------------------+----------------------------------------+------------------+----------------+
+
+

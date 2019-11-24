@@ -1,0 +1,555 @@
+
+*** Running vivado
+    with args -log ElevatorSystem.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ElevatorSystem.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source ElevatorSystem.tcl -notrace
+Command: synth_design -top ElevatorSystem -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16528 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 358.441 ; gain = 100.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ElevatorSystem' [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg_4digit' [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/SevSeg_4digit.sv:37]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/SevSeg_4digit.sv:93]
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg_4digit' (1#1) [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/SevSeg_4digit.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'display_8x8' [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/display_8x8.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'GND' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:4945]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (2#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:4945]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+	Parameter INIT bound to: 4'b0111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (3#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b10001111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (4#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b00101010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (4#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:52076]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (5#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:52076]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+	Parameter INIT bound to: 4'b0001 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (5#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b00010100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (5#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0001010101000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (6#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT5' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b00010101010101010100000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5' (7#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b10111010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (7#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0001010101010101010101010101010101000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (8#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (9#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (9#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b1111111111111110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (9#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25461]
+	Parameter INIT bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25461]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b01111000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized3' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0111111110000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b01111111111111111000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0111111111111111111111111111111110000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b1000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0000000000000000100000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0000000100000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b10000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized4' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized5' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b00001000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized5' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized6' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b00000100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized6' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized7' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized7' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0000000100000000111111111111111100000001000000000000000100000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized8' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b10111000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized8' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0000000100010001111111111111111111111111111111111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized9' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b11111110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized9' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized2' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b1111111101111111111111111111111100000000100000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized10' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b10110100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized10' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b1111011100001000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized4' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b11011111111111110010000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111101010101011111111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b01011101111111111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b11111111111111111101010111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0111111111111111111111111111111111111111111111111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111011111111111111101111111111111110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6155] done synthesizing module 'display_8x8' (11#1) [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/display_8x8.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'keypad4X4' [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/keypad4X4.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized5' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b1010101010101011 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized5' (11#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+	Parameter INIT bound to: 4'b0010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized3' (11#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (11#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized6' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b10000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized6' (11#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized9' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized9' (11#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized10' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b1111011011111111111111111111011011110000111100001111000011110000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized10' (11#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized11' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0111110111111111111111110111110100000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized11' (11#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:963]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (12#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:963]
+WARNING: [Synth 8-689] width (1) of port connection 'O' does not match port width (4) of module 'CARRY4' [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/keypad4X4.sv:524]
+WARNING: [Synth 8-350] instance 'count_reg[16]_i_1' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/keypad4X4.sv:520]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized6' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized6' (12#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized7' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0010000010101010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized7' (12#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized8' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0010101000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized8' (12#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized4' (12#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+INFO: [Synth 8-6155] done synthesizing module 'keypad4X4' (13#1) [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/keypad4X4.sv:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:152]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:464]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:508]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:553]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:598]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:643]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:855]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:1067]
+WARNING: [Synth 8-6090] variable 'in3' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:1298]
+WARNING: [Synth 8-6090] variable 'in3' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:1300]
+WARNING: [Synth 8-6090] variable 'in3' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:1307]
+WARNING: [Synth 8-6090] variable 'in3' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:1309]
+INFO: [Synth 8-6155] done synthesizing module 'ElevatorSystem' (14#1) [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 413.473 ; gain = 155.277
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 413.473 ; gain = 155.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 413.473 ; gain = 155.277
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ElevatorSystem_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ElevatorSystem_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 753.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 753.750 ; gain = 495.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 753.750 ; gain = 495.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 753.750 ; gain = 495.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:269]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:152]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:152]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:354]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.srcs/sources_1/new/ElevatorSystem.sv:152]
+INFO: [Synth 8-802] inferred FSM for state register 'currentFloor_reg' in module 'ElevatorSystem'
+INFO: [Synth 8-5545] ROM "execution" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "numOfPassengersInFirstFloor" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "numOfPassengersInSecondFloor" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "numOfPassengersInThirdFloor" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "currentFloor" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "moveTime" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "currentFloor" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "currentFloor" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "currentFloor" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentFloor_reg' using encoding 'sequential' in module 'ElevatorSystem'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 753.750 ; gain = 495.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   5 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 11    
+	   3 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               27 Bit    Registers := 2     
+	                8 Bit    Registers := 10    
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 21    
+	   4 Input     27 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 16    
+	   4 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 13    
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 21    
+	   2 Input      1 Bit        Muxes := 35    
+	   8 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ElevatorSystem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   5 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 11    
+	   3 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               27 Bit    Registers := 2     
+	                8 Bit    Registers := 10    
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 21    
+	   4 Input     27 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 16    
+	   4 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 13    
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 21    
+	   2 Input      1 Bit        Muxes := 35    
+	   8 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 1     
+Module SevSeg_4digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "moveTime" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "execution" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "currentFloor" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 753.750 ; gain = 495.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 753.750 ; gain = 495.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 911.418 ; gain = 653.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (in3_reg[3]) is unused and will be removed from module ElevatorSystem.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 911.418 ; gain = 653.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 911.418 ; gain = 653.223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 911.418 ; gain = 653.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 911.418 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 911.418 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 911.418 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 911.418 ; gain = 653.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   233|
+|3     |LUT1   |    39|
+|4     |LUT2   |   314|
+|5     |LUT3   |   467|
+|6     |LUT4   |   219|
+|7     |LUT5   |   215|
+|8     |LUT6   |   479|
+|9     |MUXF7  |     8|
+|10    |FDRE   |   294|
+|11    |FDSE   |     4|
+|12    |IBUF   |     8|
+|13    |OBUF   |    29|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+--------------+------+
+|      |Instance              |Module        |Cells |
++------+----------------------+--------------+------+
+|1     |top                   |              |  2310|
+|2     |  SevSeg_4digit_inst0 |SevSeg_4digit |    39|
+|3     |  display_8x8_0       |display_8x8   |   130|
+|4     |  keypad4X4_inst0     |keypad4X4     |    83|
++------+----------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 911.418 ; gain = 653.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 911.418 ; gain = 312.945
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 911.418 ; gain = 653.223
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 249 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'ElevatorSystem' is not ideal for floorplanning, since the cellview 'ElevatorSystem' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+160 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 911.418 ; gain = 666.234
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/MUSAB/Desktop/DigitalProject/DigitalProject.runs/synth_1/ElevatorSystem.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ElevatorSystem_utilization_synth.rpt -pb ElevatorSystem_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 911.418 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 23 16:23:28 2018...
